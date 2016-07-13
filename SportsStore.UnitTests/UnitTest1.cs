@@ -6,6 +6,7 @@ using SportsStore.Domain.Entities;
 using SportsStore.WebUI.Controllers;
 using System.Collections.Generic;
 using System.Linq;
+using System.Web.Mvc;
 
 namespace SportsStore.UnitTests
 {
@@ -28,13 +29,13 @@ namespace SportsStore.UnitTests
 
                  });
 
-            ProductController controller = new ProductController(mock.Object);
+            /*ProductController controller = new ProductController(mock.Object);
             controller.PageSize = 3;
             //działanie
-            /*IEnumerable<Product> result = (IEnumerable<Product>)controller.List(2).Model;*/
+            IEnumerable<Product> result = (IEnumerable<Product>)controller.List(2).Model;
 
             //asercje
-            /*Product[] prodArray = result.ToArray();
+            Product[] prodArray = result.ToArray();
             Assert.IsTrue(prodArray.Length == 2);
             Assert.AreEqual(prodArray[0].Name, "P4");
             Assert.AreEqual(prodArray[1].Name, "P5");*/
